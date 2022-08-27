@@ -1,0 +1,73 @@
+{
+  "folders": [
+    {
+      "id": "U-2l4ea_",
+      "name": "Default",
+      "defaultLanguage": "typescript",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "createdAt": 1661621307135,
+      "updatedAt": 1661621307135
+    },
+    {
+      "name": "Graphviz",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "defaultLanguage": "plain_text",
+      "id": "BZ6lBHGh",
+      "createdAt": 1661621334689,
+      "updatedAt": 1661621339636
+    },
+    {
+      "name": "UML",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "defaultLanguage": "plain_text",
+      "id": "_5BYHkfP",
+      "createdAt": 1661621396513,
+      "updatedAt": 1661621399257
+    }
+  ],
+  "snippets": [
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "BZ6lBHGh",
+      "tagsIds": [],
+      "description": null,
+      "name": "index",
+      "content": [
+        {
+          "label": "Fragment 1",
+          "language": "dot",
+          "value": "dot 默认布局方式，主要用于有向图\nneato 基于spring-model(又称force-based)算法\ntwopi 径向布局\ncirco 圆环布局\nfdp 用于无向图"
+        }
+      ],
+      "id": "zG9pUyco",
+      "createdAt": 1661621402944,
+      "updatedAt": 1661621423434
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "BZ6lBHGh",
+      "tagsIds": [],
+      "description": null,
+      "name": "多个分组",
+      "content": [
+        {
+          "label": "Fragment 1",
+          "language": "dot",
+          "value": "digraph G {\n\n  subgraph cluster_0 {\n    style=filled;\n    color=lightgrey;\n    node [style=filled,color=white];\n    a0 -> a1 -> a2 -> a3;\n    label = \"process #1\";\n  }\n\n  subgraph cluster_1 {\n    node [style=filled];\n    b0 -> b1 -> b2 -> b3;\n    label = \"process #2\";\n    color=blue\n  }\n  start -> a0;\n  start -> b0;\n  a1 -> b3;\n  b2 -> a3;\n  a3 -> a0;\n  a3 -> end;\n  b3 -> end;\n\n  start [shape=Mdiamond];\n  end [shape=Msquare];\n}"
+        }
+      ],
+      "id": "YmTdU6bA",
+      "createdAt": 1661621674905,
+      "updatedAt": 1661621705297
+    }
+  ],
+  "tags": []
+}
