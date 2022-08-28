@@ -53,12 +53,12 @@
         {
           "label": "Fragment 1",
           "language": "markdown",
-          "value": "1. dot 默认布局方式，主要用于有向图\n2. neato 基于spring-model(又称force-based)算法\n3. twopi 径向布局\n4. circo 圆环布局\n5. fdp 用于无向图\n\ngraphviz包含3中元素，图，顶点和边。每个元素都可以具有各自的属性，用来定义字体，样式，颜色，形状等。\n\n```mermaid\nflowchart LR\nA[Hard] -->|Text| B(Round)\nB --> C{Decision}\nC -->|One| D[Result 1]\nC -->|Two| E[Result 2]\n```\n\n![](https://icodeit.org/images/2012/01/clip_image006.gif)\n```dot\ndigraph abc{\n\tnode [shape=\"record\"];\n\tedge [style=\"dashed\"];\n\t \n\ta [style=\"filled\", color=\"black\", fillcolor=\"chartreuse\"];\n\tb;\n\tc;\n\td;\n\t \n\ta -> b;\n\tb -> d;\n\tc -> d [color=\"red\"];\n}\n```\n\n![](https://icodeit.org/images/2012/01/clip_image022.gif)\n\nSource:\n\n```dot\ndigraph automata_0 {\n\tsize = \"8.5, 11\";\n\tfontname = \"Microsoft YaHei\";\n\tfontsize = 10;\n\t \n\tnode [shape = circle, fontname = \"Microsoft YaHei\", fontsize = 10];\n\tedge [fontname = \"Microsoft YaHei\", fontsize = 10];\n\t \n\t0 [ style = filled, color=lightgrey ];\n\t2 [ shape = doublecircle ];\n\t \n\t0 -> 2 [ label = \"a \" ];\n\t0 -> 1 [ label = \"other \" ];\n\t1 -> 2 [ label = \"a \" ];\n\t1 -> 1 [ label = \"other \" ];\n\t2 -> 2 [ label = \"a \" ];\n\t2 -> 1 [ label = \"other \" ];\n\t \n\t\"Machine: a\" [ shape = plaintext ];\n}\n```"
+          "value": "1. dot 默认布局方式，主要用于有向图\n2. neato 基于spring-model(又称force-based)算法\n3. twopi 径向布局\n4. circo 圆环布局\n5. fdp 用于无向图\n\ngraphviz包含3中元素，图，顶点和边。每个元素都可以具有各自的属性，用来定义字体，样式，颜色，形状等。\n\n```mermaid\nflowchart LR\nA[Hard] -->|Text| B(Round)\nB --> C{Decision}\nC -->|One| D[Result 1]\nC -->|Two| E[Result 2]\n```\n\n![](https://icodeit.org/images/2012/01/clip_image006.gif)\n```dot\ndigraph abc{\n\tnode [shape=\"record\"];\n\tedge [style=\"dashed\"];\n\t \n\ta [style=\"filled\", color=\"black\", fillcolor=\"chartreuse\"];\n\tb;\n\tc;\n\td;\n\t \n\ta -> b;\n\tb -> d;\n\tc -> d [color=\"red\"];\n}\n```\n\n![](https://icodeit.org/images/2012/01/clip_image022.gif)\n\nSource:\n\n```dot\ndigraph automata_0 {\n\tsize = \"8.5, 11\";\n\tfontname = \"Microsoft YaHei\";\n\tfontsize = 10;\n\t \n\tnode [shape = circle, fontname = \"Microsoft YaHei\", fontsize = 10];\n\tedge [fontname = \"Microsoft YaHei\", fontsize = 10];\n\t \n\t0 [ style = filled, color=lightgrey ];\n\t2 [ shape = doublecircle ];\n\t \n\t0 -> 2 [ label = \"a \" ];\n\t0 -> 1 [ label = \"other \" ];\n\t1 -> 2 [ label = \"a \" ];\n\t1 -> 1 [ label = \"other \" ];\n\t2 -> 2 [ label = \"a \" ];\n\t2 -> 1 [ label = \"other \" ];\n\t \n\t\"Machine: a\" [ shape = plaintext ];\n}\n```\n\n\n"
         }
       ],
       "id": "zG9pUyco",
       "createdAt": 1661621402944,
-      "updatedAt": 1661658854598
+      "updatedAt": 1661661368377
     },
     {
       "isDeleted": false,
@@ -153,6 +153,24 @@
       "id": "iIuoGJvL",
       "createdAt": 1661655327284,
       "updatedAt": 1661655329976
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "BZ6lBHGh",
+      "tagsIds": [],
+      "description": null,
+      "name": "Untitled snippet",
+      "content": [
+        {
+          "label": "Fragment 1",
+          "language": "prisma",
+          "value": "@startuml\nAlice -> Bob: Authentication Request\nBob --> Alice: Authentication Response\n\nAlice -> Bob: Another authentication Request\nAlice <-- Bob: Another authentication Response\n@enduml\n"
+        }
+      ],
+      "id": "YIW4Uhku",
+      "createdAt": 1661661228293,
+      "updatedAt": 1661661260138
     }
   ],
   "tags": [
